@@ -1,5 +1,12 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRouters from './routers';
+
 function App() {
-  return <h1>Craftly</h1>;
+  return (
+    <Router>
+      <AppRouters />
+    </Router>
+  );
 }
 
 export default App;
