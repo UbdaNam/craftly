@@ -1,1 +1,19 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-primary: theme(colors.stone.700);
+  --color-primary-hover: theme(colors.stone.800);
+  --color-primary-muted: theme(colors.stone.500);
+  --color-primary-bg: theme(colors.stone.200);
+
+  --color-foreground: theme(colors.stone.950);
+  --color-muted: theme(colors.stone.500);
+
+  --color-background: theme(colors.stone.100);
+  --color-card: theme(colors.white);
+  --color-border: theme(colors.stone.200);
+
+  --color-success: theme(colors.green.600);
+  --color-warning: theme(colors.yellow.500);
+  --color-danger: theme(colors.red.600);
+}
