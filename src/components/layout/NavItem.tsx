@@ -14,13 +14,13 @@ const NavItem = ({ label, path, Icon }: NavItemProps) => {
       to={path}
       className={({ isActive }) =>
         cn(
-          `flex space-x-2 text-sm leading-6 text-slate-800 items-center px-2 py-1 rounded-sm hover:bg-gray-200 hover:text-black transform transition-colors duration-50`,
-          isActive ? 'bg-gray-200' : ''
+          `flex space-x-2 text-sm leading-6 text-stone-700 items-center px-2 py-1 rounded-sm hover:bg-primary-bg hover:text-primary-hover transform transition-colors duration-50`,
+          isActive ? 'bg-primary-bg text-primary-hover' : ''
         )
       }
     >
       <Icon className="size-4" />
-      <span className="text-slate-800">{label}</span>
+      <span>{label}</span>
     </NavLink>
   );
 };
