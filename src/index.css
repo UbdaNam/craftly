@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
+  --font-sans: 'Inter', sans-serif;
   --color-primary: theme(colors.stone.700);
   --color-primary-hover: theme(colors.stone.800);
   --color-primary-muted: theme(colors.stone.500);
