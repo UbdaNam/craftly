@@ -9,10 +9,10 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const COLOR_PATTERNS: Record<NonNullable<ButtonProps['pattern']>, string> = {
   default:
-    'bg-white hover:bg-stone-100 text-stone-700 border border-border shadow-2xs',
-  primary: 'bg-primary hover:bg-primary-hover text-white',
+    'bg-white/80 hover:bg-muted text-foreground text-sm border border-border shadow-2xs',
+  primary: 'bg-primary hover:bg-primary/90 text-white',
   black:
-    'bg-stone-800 hover:bg-stone-950 text-white border border-border shadow-2xs',
+    'bg-foreground hover:bg-foreground/90 text-white border border-border shadow-2xs',
 };
 
 const Button: FC<ButtonProps> = ({
@@ -27,7 +27,7 @@ const Button: FC<ButtonProps> = ({
 
   const CLASSES = `
     inline-flex items-center justify-center
-    rounded-md transition-colors
+    rounded-sm cursor-pointer transition-colors
     ${colors}
     ${fontSize}
     ${sizeClass}

@@ -9,7 +9,7 @@ export const Heading: React.FC<HeadingProps> = ({
   ...args
 }) => {
   return (
-    <h2 {...args} className={cn('text-stone-800', className)}>
+    <h2 {...args} className={cn('text-foreground', className)}>
       {children}
     </h2>
   );

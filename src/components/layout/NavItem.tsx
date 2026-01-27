@@ -14,8 +14,8 @@ const NavItem = ({ label, path, Icon }: NavItemProps) => {
       to={path}
       className={({ isActive }) =>
         cn(
-          `flex space-x-2 text-sm leading-6 text-stone-700 items-center px-2 py-1 rounded-sm hover:bg-primary-bg hover:text-primary-hover transform transition-colors duration-50`,
-          isActive ? 'bg-primary-bg text-primary-hover' : ''
+          `flex space-x-2 text-sm leading-6 text-sidebar-foreground items-center px-2 py-1 rounded-sm hover:bg-sidebar-primary hover:text-sidebar-primary-foreground transform transition-colors duration-50`,
+          isActive ? 'bg-sidebar-primary text-sidebar-primary-foreground' : ''
         )
       }
     >
