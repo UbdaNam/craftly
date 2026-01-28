@@ -1,14 +1,29 @@
-export type ContentStatus = 'draft' | 'review' | 'scheduled' | 'published';
+export type ContentStatus =
+  | 'draft'
+  | 'in_progress'
+  | 'review'
+  | 'scheduled'
+  | 'published';
 export type ContentPriority = 'low' | 'medium' | 'high';
-export type Platform = 'tiktok' | 'instagram' | 'linkedin' | 'x';
+export type Platforms = 'tiktok' | 'instagram' | 'linkedin' | 'x';
+export type TwMainColor =
+  | 'pink'
+  | 'green'
+  | 'yellow'
+  | 'red'
+  | 'indigo'
+  | 'blue'
+  | 'purple'
+  | 'gray';
 
 export interface Content {
   id: string;
   title: string;
-  platforms: Platform[];
+  description?: string;
+  platforms: Platforms[];
   status: ContentStatus;
   priority: ContentPriority;
-  assignee: {
+  assignee?: {
     id: string;
     name: string;
     avatarUrl?: string;
